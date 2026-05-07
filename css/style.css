@@ -12,7 +12,7 @@
   --ia-text:    #1d1d1f;
   --ia-muted:   #6e6e73;
   --ia-border:  rgba(0,0,0,0.08);
-  --nav-h:      52px;
+  --nav-h:      96px;
   --radius-lg:  20px;
   --radius-md:  14px;
   --radius-sm:  10px;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo img {
-  height: 44px;
+  height: 88px;
   width: auto;
   object-fit: contain;
 }
