@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Infinite Analytics is a premium product design studio. We take apps from first idea to App Store — product discovery, UX research, UI design, mobile development and launch.">
+  <title>Infinite Analytics — Mobile App Design Studio</title>
+  <link rel="canonical" href="https://www.infiniteanalytics.com.au/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/logo.png">
+</head>
+<body class="home">
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/images/logo.png" alt="Infinite Analytics">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="/services">Services <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="/service-product-discovery">Product Discovery</a>
+          <a href="/service-ux-research">UX Research</a>
+          <a href="/service-ui-design">UI Design &amp; Prototyping</a>
+          <a href="/service-mobile-app-development">Mobile App Development</a>
+          <a href="/service-web-development">Web Development</a>
+          <a href="/service-digital-strategy">Digital Strategy</a>
+          <a href="/services-data-analytics">Data &amp; Analytics</a>
+          <a href="/strategy-digital-business-transformation">Digital Business Transformation</a>
+        </div>
+      </li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/service-product-discovery" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Product Discovery</a>
+    <a href="/service-ux-research" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">UX Research</a>
+    <a href="/service-ui-design" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">UI Design &amp; Prototyping</a>
+    <a href="/service-mobile-app-development" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Mobile App Development</a>
+    <a href="/service-web-development" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Web Development</a>
+    <a href="/service-digital-strategy" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Digital Strategy</a>
+    <a href="/services-data-analytics" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Data &amp; Analytics</a>
+    <a href="/strategy-digital-business-transformation" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Digital Business Transformation</a>
+    <a href="/contact">Contact</a>
+    <a href="/contact" class="mobile-cta">Get in touch &rarr;</a>
+  </div>
+</nav>
+<script>
+(function(){
+  var toggle=document.getElementById('menuToggle'),nav=document.getElementById('mobileNav');
+  toggle.addEventListener('click',function(){var open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');nav.setAttribute('aria-hidden',open?'false':'true');});
+  window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20);},{passive:true});
+})();
+</script>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow fade-in">Mobile App Design Studio &mdash; Australia</p>
+    <h1 class="fade-in delay-1">We design apps<br>people love.</h1>
+    <p class="hero-sub fade-in delay-2">From first idea to App Store &mdash; Infinite Analytics is your end-to-end product studio.</p>
+    <div class="hero-actions fade-in delay-3">
+      <a href="/contact" class="btn-primary">Start a project &nbsp;&rarr;</a>
+      <a href="/services" class="btn-secondary">See our services &nbsp;&rarr;</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Product Discovery</span><span class="dot">&middot;</span>
+    <span>UX Research</span><span class="dot">&middot;</span>
+    <span>UI Design</span><span class="dot">&middot;</span>
+    <span>Prototyping</span><span class="dot">&middot;</span>
+    <span>iOS Development</span><span class="dot">&middot;</span>
+    <span>Android Development</span><span class="dot">&middot;</span>
+    <span>React Native</span><span class="dot">&middot;</span>
+    <span>Flutter</span><span class="dot">&middot;</span>
+    <span>Web Development</span><span class="dot">&middot;</span>
+    <span>Digital Strategy</span><span class="dot">&middot;</span>
+    <span>Data &amp; Analytics</span><span class="dot">&middot;</span>
+    <span>Digital Transformation</span><span class="dot">&middot;</span>
+    <span>Product Discovery</span><span class="dot">&middot;</span>
+    <span>UX Research</span><span class="dot">&middot;</span>
+    <span>UI Design</span><span class="dot">&middot;</span>
+    <span>Prototyping</span><span class="dot">&middot;</span>
+    <span>iOS Development</span><span class="dot">&middot;</span>
+    <span>Android Development</span><span class="dot">&middot;</span>
+    <span>React Native</span><span class="dot">&middot;</span>
+    <span>Flutter</span><span class="dot">&middot;</span>
+    <span>Web Development</span><span class="dot">&middot;</span>
+    <span>Digital Strategy</span><span class="dot">&middot;</span>
+    <span>Data &amp; Analytics</span><span class="dot">&middot;</span>
+    <span>Digital Transformation</span><span class="dot">&middot;</span>
+  </div>
+</div>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">Our expertise</span>
+      <h2 class="section-title">Everything your product needs.</h2>
+      <p class="section-subtitle">From research to release, we cover every stage of the product lifecycle with one unified team.</p>
+    </div>
+    <div class="services-grid">
+      <a href="/service-product-discovery" class="service-card fade-in delay-1">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg></div>
+        <h3>Product Discovery</h3>
+        <p>Ideation workshops, market research, competitive analysis and feature prioritisation to set your product up for success.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+      <a href="/service-ux-research" class="service-card fade-in delay-2">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <h3>UX Research</h3>
+        <p>User interviews, usability testing, personas and journey mapping to ground every design decision in real user insight.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+      <a href="/service-ui-design" class="service-card fade-in delay-3">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg></div>
+        <h3>UI Design &amp; Prototyping</h3>
+        <p>Pixel-perfect visual design, scalable design systems and interactive Figma prototypes that bring ideas to life.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+      <a href="/service-mobile-app-development" class="service-card fade-in delay-4">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg></div>
+        <h3>Mobile App Development</h3>
+        <p>Native iOS, Android and cross-platform apps built with React Native or Flutter — performant and production-ready.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">How we work</span>
+      <h2 class="section-title">Five steps. One great product.</h2>
+      <p class="section-subtitle">Our studio process is built for clarity, speed and quality — from the first conversation to launch day.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-in delay-1">
+        <div class="step-num">01</div>
+        <h4 class="step-title">Discover</h4>
+        <p class="step-desc">We run deep-dive workshops to understand your business, your users and the opportunity you're trying to seize.</p>
+      </div>
+      <div class="process-step fade-in delay-2">
+        <div class="step-num">02</div>
+        <h4 class="step-title">Research</h4>
+        <p class="step-desc">User interviews, competitor analysis and usability testing to ground every decision in evidence — not assumptions.</p>
+      </div>
+      <div class="process-step fade-in delay-3">
+        <div class="step-num">03</div>
+        <h4 class="step-title">Design</h4>
+        <p class="step-desc">We craft the visual language, design system and interactive prototype — pixel-perfect and ready for handoff.</p>
+      </div>
+      <div class="process-step fade-in delay-4">
+        <div class="step-num">04</div>
+        <h4 class="step-title">Build</h4>
+        <p class="step-desc">Our engineers build clean, maintainable code across iOS, Android or web — tested thoroughly before it ships.</p>
+      </div>
+      <div class="process-step fade-in delay-4">
+        <div class="step-num">05</div>
+        <h4 class="step-title">Launch</h4>
+        <p class="step-desc">We manage App Store submission, go-to-market coordination and post-launch analytics so you hit the ground running.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="big-statement">
+  <p class="big-statement-text fade-in">
+    Every great app starts with a great idea.<br>
+    <em>We help you turn yours into reality.</em>
+  </p>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">Beyond design</span>
+      <h2 class="section-title">Strategy, data &amp; transformation.</h2>
+      <p class="section-subtitle">Great products need great foundations. We offer the strategic and technical depth to support your entire digital journey.</p>
+    </div>
+    <div class="services-grid">
+      <a href="/service-web-development" class="service-card fade-in delay-1">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253"/></svg></div>
+        <h3>Web Development</h3>
+        <p>Web applications, marketing sites and e-commerce experiences engineered for speed, accessibility and growth.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+      <a href="/service-digital-strategy" class="service-card fade-in delay-2">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg></div>
+        <h3>Digital Strategy</h3>
+        <p>Go-to-market planning, product-market fit validation and digital roadmaps that align technology with business goals.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+      <a href="/services-data-analytics" class="service-card fade-in delay-3">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg></div>
+        <h3>Data &amp; Analytics</h3>
+        <p>Product analytics, custom dashboards and user insight programmes that turn raw data into confident decisions.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+      <a href="/strategy-digital-business-transformation" class="service-card fade-in delay-4">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="26" height="26"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg></div>
+        <h3>Digital Business Transformation</h3>
+        <p>Modernising legacy systems, streamlining operations and embedding digital thinking across your organisation.</p>
+        <span class="card-link">Learn more &nbsp;&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">Why Infinite Analytics</span>
+      <h2 class="section-title">Design-led. Product-minded.</h2>
+    </div>
+    <div class="features-highlights">
+      <div class="feature-highlight fade-in delay-1">
+        <div class="feature-highlight-num">01</div>
+        <h3>Design is our craft, not an afterthought.</h3>
+        <p>We treat design as the central discipline — every interaction, every transition, every pixel is considered. The result is software that people genuinely enjoy using.</p>
+      </div>
+      <div class="feature-highlight fade-in delay-2">
+        <div class="feature-highlight-num">02</div>
+        <h3>One team, end to end.</h3>
+        <p>Research, design and engineering work together in the same room. No handoff friction, no translation loss between teams — just a single, coherent vision all the way to launch.</p>
+      </div>
+      <div class="feature-highlight fade-in delay-3">
+        <div class="feature-highlight-num">03</div>
+        <h3>We&rsquo;ve shipped. We know what works.</h3>
+        <p>Our team has launched apps across healthcare, finance, retail and beyond. We bring that pattern recognition to every new project — so you avoid the mistakes others have paid to learn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="fade-in">Ready to build something great?</h2>
+    <p class="fade-in delay-1">Tell us about your idea. We&rsquo;ll tell you honestly how we&rsquo;d approach it.</p>
+    <a href="/contact" class="btn-white fade-in delay-2">Start a conversation &nbsp;&rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/images/logo.png" alt="Infinite Analytics">
+      <p>A premium product design studio. We take apps from first idea to App Store — design, development and everything in between.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/service-product-discovery">Product Discovery</a></li>
+        <li><a href="/service-ux-research">UX Research</a></li>
+        <li><a href="/service-ui-design">UI Design &amp; Prototyping</a></li>
+        <li><a href="/service-mobile-app-development">Mobile App Development</a></li>
+        <li><a href="/service-web-development">Web Development</a></li>
+        <li><a href="/service-digital-strategy">Digital Strategy</a></li>
+        <li><a href="/services-data-analytics">Data &amp; Analytics</a></li>
+        <li><a href="/strategy-digital-business-transformation">Digital Transformation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/services">Our Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/contact">Start a Project</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Infinite Analytics Pty Ltd. All rights reserved.</p>
+    <p>Australia &nbsp;&mdash;&nbsp; Built with care</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var elements=document.querySelectorAll('.fade-in');
+  if(!elements.length)return;
+  var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  elements.forEach(function(el){observer.observe(el);});
+})();
+</script>
+</body>
+</html>
