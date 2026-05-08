@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Infinite Analytics built Olobam Fashion & Fabric — a marketplace app connecting fashion businesses and fabric suppliers across Australia, from first idea to App Store launch.">
+  <title>Olobam Fashion &amp; Fabric — Case Study | Infinite Analytics</title>
+  <link rel="canonical" href="https://www.infiniteanalytics.com.au/work/olobam">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/logo.png">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="/images/logo.png" alt="Infinite Analytics"></a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="/services">Services <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="/service-product-discovery">Product Discovery</a>
+          <a href="/service-ux-research">UX Research</a>
+          <a href="/service-ui-design">UI Design &amp; Prototyping</a>
+          <a href="/service-mobile-app-development">Mobile App Development</a>
+          <a href="/service-web-development">Web Development</a>
+          <a href="/service-digital-strategy">Digital Strategy</a>
+          <a href="/services-data-analytics">Data &amp; Analytics</a>
+          <a href="/strategy-digital-business-transformation">Digital Business Transformation</a>
+        </div>
+      </li>
+      <li><a href="/work" class="active">Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/service-product-discovery" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Product Discovery</a>
+    <a href="/service-ux-research" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">UX Research</a>
+    <a href="/service-ui-design" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">UI Design &amp; Prototyping</a>
+    <a href="/service-mobile-app-development" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Mobile App Development</a>
+    <a href="/service-web-development" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Web Development</a>
+    <a href="/service-digital-strategy" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Digital Strategy</a>
+    <a href="/services-data-analytics" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Data &amp; Analytics</a>
+    <a href="/strategy-digital-business-transformation" style="padding-left:36px;font-size:13.5px;color:rgba(29,29,31,0.55);">Digital Business Transformation</a>
+    <a href="/work">Work</a>
+    <a href="/contact">Contact</a>
+    <a href="/contact" class="mobile-cta">Get in touch &rarr;</a>
+  </div>
+</nav>
+<script>
+(function(){
+  var toggle=document.getElementById('menuToggle'),nav=document.getElementById('mobileNav');
+  toggle.addEventListener('click',function(){var open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');nav.setAttribute('aria-hidden',open?'false':'true');});
+  window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20);},{passive:true});
+})();
+</script>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="case-hero-inner fade-in">
+    <div class="case-hero-icon">
+      <img src="/images/olobam-icon.png" alt="Olobam app icon">
+    </div>
+    <span class="case-hero-eyebrow">Case Study &mdash; iOS &amp; Android</span>
+    <h1>Olobam Fashion &amp; Fabric</h1>
+    <p class="case-hero-sub">A marketplace connecting fashion businesses and fabric suppliers across Australia &mdash; designed, built and launched by Infinite Analytics.</p>
+    <div class="case-hero-badges">
+      <a href="https://apps.apple.com/au/app/olobam-fashion-fabric/id6761603416" target="_blank" rel="noopener" class="store-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.infiniteanalytics.olobamfnf" target="_blank" rel="noopener" class="store-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M3.18 23.76c.3.17.64.22.98.15l12.49-7.21-2.79-2.79-10.68 9.85zm-1.47-20.7A1.99 1.99 0 001.5 4.5v15c0 .54.21 1.04.55 1.41l.07.07 8.4-8.4v-.2L1.78 3.14l-.07.07-.07-.15zM20.49 10.7l-2.79-1.61-3.13 3.13 3.13 3.13 2.82-1.63c.8-.46.8-1.56-.03-2.02zm-17.31 12.2l10.68-9.85-2.79-2.79L1.71 5.38a.44.44 0 00-.07.09l.07 17.66a.44.44 0 00.07.09l10.68-9.85z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- META BAR -->
+<div class="case-meta">
+  <div class="case-meta-item">
+    <span class="case-meta-label">Industry</span>
+    <span class="case-meta-value">Fashion &amp; Retail</span>
+  </div>
+  <div class="case-meta-item">
+    <span class="case-meta-label">Platform</span>
+    <span class="case-meta-value">iOS &amp; Android</span>
+  </div>
+  <div class="case-meta-item">
+    <span class="case-meta-label">Technology</span>
+    <span class="case-meta-value">React Native</span>
+  </div>
+  <div class="case-meta-item">
+    <span class="case-meta-label">Status</span>
+    <span class="case-meta-value">Live &mdash; 2025</span>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="split-grid fade-in">
+      <div>
+        <span class="section-label">The challenge</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:24px;">A fragmented industry needed a marketplace.</h2>
+        <p style="color:var(--ia-muted);line-height:1.8;margin-bottom:16px;">The fashion and fabric industry in Australia is highly fragmented. Fabric suppliers had no reliable digital channel to reach fashion businesses, and designers had no single place to discover suppliers, browse collections and manage relationships.</p>
+        <p style="color:var(--ia-muted);line-height:1.8;">Olobam set out to change that &mdash; creating a two-sided marketplace that brings the whole ecosystem together on a single platform, on mobile.</p>
+      </div>
+      <div>
+        <span class="section-label">Our role</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:24px;">End-to-end product ownership.</h2>
+        <p style="color:var(--ia-muted);line-height:1.8;margin-bottom:16px;">Infinite Analytics owned every stage of this product &mdash; from the initial concept and market research through to UI design, engineering, App Store submission and post-launch support.</p>
+        <p style="color:var(--ia-muted);line-height:1.8;">This wasn&rsquo;t a client brief. We built Olobam as our own product, which means we made every decision and carried every responsibility a real product team does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">What we built</span>
+      <h2 class="section-title">A full-featured marketplace platform.</h2>
+      <p class="section-subtitle">Two user types, one cohesive experience &mdash; built for real people in the fashion industry.</p>
+    </div>
+    <div class="case-feature-grid">
+      <div class="case-feature fade-in delay-1">
+        <div class="case-feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"/></svg>
+        </div>
+        <h4>Business Storefronts</h4>
+        <p>Suppliers and fashion businesses get their own branded storefront to showcase products, post designs and manage their catalogue.</p>
+      </div>
+      <div class="case-feature fade-in delay-2">
+        <div class="case-feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+        </div>
+        <h4>Discovery &amp; Browse</h4>
+        <p>Personal accounts can browse stores, discover featured designs, filter by category and find exactly what they&rsquo;re looking for.</p>
+      </div>
+      <div class="case-feature fade-in delay-3">
+        <div class="case-feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+        </div>
+        <h4>In-app Messaging</h4>
+        <p>Buyers and sellers communicate directly through threaded in-app messaging — no need to exchange contact details externally.</p>
+      </div>
+      <div class="case-feature fade-in delay-1">
+        <div class="case-feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+        </div>
+        <h4>Design Posting</h4>
+        <p>Business users can upload and share design images and videos — creating a rich visual catalogue for buyers to explore.</p>
+      </div>
+      <div class="case-feature fade-in delay-2">
+        <div class="case-feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+        </div>
+        <h4>Push Notifications</h4>
+        <p>Real-time alerts for new messages, store activity and platform updates keep users engaged and informed.</p>
+      </div>
+      <div class="case-feature fade-in delay-3">
+        <div class="case-feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+        </div>
+        <h4>Dual Account Types</h4>
+        <p>Separate business and personal account flows, each with tailored interfaces, permissions and feature sets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES DELIVERED -->
+<section class="section">
+  <div class="container">
+    <div class="split-grid fade-in">
+      <div>
+        <span class="section-label">Services delivered</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:16px;">Every discipline under one roof.</h2>
+        <p style="color:var(--ia-muted);line-height:1.8;">This project demonstrates what&rsquo;s possible when research, design and engineering work as a single team from day one &mdash; no hand-off friction, no translation loss.</p>
+      </div>
+      <div class="services-delivered">
+        <div class="service-delivered-item fade-in delay-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+          <span>Product Discovery</span>
+        </div>
+        <div class="service-delivered-item fade-in delay-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
+          <span>UI Design &amp; Prototyping</span>
+        </div>
+        <div class="service-delivered-item fade-in delay-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+          <span>Mobile App Development</span>
+        </div>
+        <div class="service-delivered-item fade-in delay-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+          <span>Digital Strategy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="fade-in">Have an idea like this?</h2>
+    <p class="fade-in delay-1">We&rsquo;ve done it before &mdash; from blank page to App Store. Let&rsquo;s talk about yours.</p>
+    <a href="/contact" class="btn-white fade-in delay-2">Start a conversation &nbsp;&rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/images/logo.png" alt="Infinite Analytics">
+      <p>A premium product design studio. We take apps from first idea to App Store — design, development and everything in between.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/service-product-discovery">Product Discovery</a></li>
+        <li><a href="/service-ux-research">UX Research</a></li>
+        <li><a href="/service-ui-design">UI Design &amp; Prototyping</a></li>
+        <li><a href="/service-mobile-app-development">Mobile App Development</a></li>
+        <li><a href="/service-web-development">Web Development</a></li>
+        <li><a href="/service-digital-strategy">Digital Strategy</a></li>
+        <li><a href="/services-data-analytics">Data &amp; Analytics</a></li>
+        <li><a href="/strategy-digital-business-transformation">Digital Transformation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/work/olobam">Our Work</a></li>
+        <li><a href="/services">Our Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Infinite Analytics Pty Ltd. All rights reserved.</p>
+    <p>Australia &nbsp;&mdash;&nbsp; Built with care</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var elements=document.querySelectorAll('.fade-in');
+  if(!elements.length)return;
+  var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  elements.forEach(function(el){observer.observe(el);});
+})();
+</script>
+</body>
+</html>
