@@ -1347,14 +1347,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-  :root { --nav-h: 72px; }
+  :root { --nav-h: 96px; }
 
   body { padding-top: var(--nav-h); }
   .nav-links { display: none; }
   .menu-toggle { display: flex; }
 
-  /* Nav logo — scale down for mobile navbar */
-  .nav-logo img { height: 44px; }
+  /* Nav logo — mobile */
+  .nav-logo img { height: 88px; }
 
   /* Footer logo — cap on mobile */
   .footer-brand img { height: 72px; }
@@ -1412,7 +1412,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .nav-logo img { height: 36px; }
+  :root { --nav-h: 88px; }
+  .nav-logo img { height: 72px; }
 
   .hero { padding: 56px 16px; min-height: 80vh; }
   .hero h1 { font-size: clamp(2rem, 11vw, 2.8rem); }
