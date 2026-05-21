@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /images/
+
+Sitemap: https://www.infiniteanalytics.com.au/sitemap.xml
