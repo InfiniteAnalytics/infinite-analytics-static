@@ -7,6 +7,16 @@
       "has": [{ "type": "host", "value": "infiniteanalytics.com.au" }],
       "destination": "https://www.infiniteanalytics.com.au/:path*",
       "permanent": true
+    },
+    {
+      "source": "/strategy-digital-business-transformation.php",
+      "destination": "https://www.infiniteanalytics.com.au/strategy-digital-business-transformation",
+      "permanent": true
+    },
+    {
+      "source": "/service-cloud-computing.php",
+      "destination": "https://www.infiniteanalytics.com.au/services",
+      "permanent": true
     }
   ],
   "headers": [
