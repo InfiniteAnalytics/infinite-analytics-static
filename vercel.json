@@ -9,13 +9,8 @@
       "permanent": true
     },
     {
-      "source": "/strategy-digital-business-transformation.php",
-      "destination": "https://www.infiniteanalytics.com.au/strategy-digital-business-transformation",
-      "permanent": true
-    },
-    {
-      "source": "/service-cloud-computing.php",
-      "destination": "https://www.infiniteanalytics.com.au/services",
+      "source": "/:slug([^/]+)\\.php",
+      "destination": "https://www.infiniteanalytics.com.au/:slug",
       "permanent": true
     }
   ],
